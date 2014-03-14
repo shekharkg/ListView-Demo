@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trial</string>
+    <string name="app_page">Base Adapter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+<string-array name="titles">
+	    <item>Meme One</item>
+	    <item>Meme Two</item>
+	    <item>Meme Three</item>
+	    <item>Meme Four</item>
+	    <item>Meme Five</item>
+	    <item>Meme Six</item>
+	    <item>Meme Seven</item>
+	    <item>Meme Eight</item>
+	    <item>Meme Nine</item>
+	    <item>Meme Ten</item>
+	    <item>Meme Eleven</item>
+	    <item>Meme Twelve</item>
+	    <item>Meme One</item>
+	    <item>Meme Two</item>
+	    <item>Meme Three</item>
+	    <item>Meme Four</item>
+	    <item>Meme Five</item>
+	    <item>Meme Six</item>
+	    <item>Meme Seven</item>
+	    <item>Meme Eight</item>
+	    <item>Meme Nine</item>
+	    <item>Meme Ten</item>
+	    <item>Meme Eleven</item>
+	    <item>Meme Twelve</item>
+	    <item>Meme One</item>
+	    <item>Meme Two</item>
+	    <item>Meme Three</item>
+	    <item>Meme Four</item>
+	    <item>Meme Five</item>
+	    <item>Meme Six</item>
+	    <item>Meme Seven</item>
+	    <item>Meme Eight</item>
+	    <item>Meme Nine</item>
+	    <item>Meme Ten</item>
+	    <item>Meme Eleven</item>
+	    <item>Meme Twelve</item>
+	    <item>Meme One</item>
+	    <item>Meme Two</item>
+	    <item>Meme Three</item>
+	    <item>Meme Four</item>
+	    <item>Meme Five</item>
+	    <item>Meme Six</item>
+	    <item>Meme Seven</item>
+	    <item>Meme Eight</item>
+	    <item>Meme Nine</item>
+	    <item>Meme Ten</item>
+	    <item>Meme Eleven</item>
+	    <item>Meme Twelve</item>
+	    <item>Meme One</item>
+	    <item>Meme Two</item>
+	    <item>Meme Three</item>
+	    <item>Meme Four</item>
+	    <item>Meme Five</item>
+	    <item>Meme Six</item>
+	    <item>Meme Seven</item>
+	    <item>Meme Eight</item>
+	    <item>Meme Nine</item>
+	    <item>Meme Ten</item>
+	    <item>Meme Eleven</item>
+	    <item>Meme Twelve</item>
+	</string-array>
+	<string-array name="description">
+	    <item>This is Description One</item>
+	    <item>This is Description Two</item>
+	    <item>This is Description Three</item>
+	    <item>This is Description Four</item>
+	    <item>This is Description Five</item>
+	    <item>This is Description Six</item>
+	    <item>This is Description Seven</item>
+	    <item>This is Description Eight</item>
+	    <item>This is Description Nine</item>
+	    <item>This is Description Ten</item>
+	    <item>This is Description Eleven</item>
+	    <item>This is Description Twelve</item>
+	    <item>This is Description One</item>
+	    <item>This is Description Two</item>
+	    <item>This is Description Three</item>
+	    <item>This is Description Four</item>
+	    <item>This is Description Five</item>
+	    <item>This is Description Six</item>
+	    <item>This is Description Seven</item>
+	    <item>This is Description Eight</item>
+	    <item>This is Description Nine</item>
+	    <item>This is Description Ten</item>
+	    <item>This is Description Eleven</item>
+	    <item>This is Description Twelve</item>
+	    <item>This is Description One</item>
+	    <item>This is Description Two</item>
+	    <item>This is Description Three</item>
+	    <item>This is Description Four</item>
+	    <item>This is Description Five</item>
+	    <item>This is Description Six</item>
+	    <item>This is Description Seven</item>
+	    <item>This is Description Eight</item>
+	    <item>This is Description Nine</item>
+	    <item>This is Description Ten</item>
+	    <item>This is Description Eleven</item>
+	    <item>This is Description Twelve</item>
+	    <item>This is Description One</item>
+	    <item>This is Description Two</item>
+	    <item>This is Description Three</item>
+	    <item>This is Description Four</item>
+	    <item>This is Description Five</item>
+	    <item>This is Description Six</item>
+	    <item>This is Description Seven</item>
+	    <item>This is Description Eight</item>
+	    <item>This is Description Nine</item>
+	    <item>This is Description Ten</item>
+	    <item>This is Description Eleven</item>
+	    <item>This is Description Twelve</item>
+	    <item>This is Description One</item>
+	    <item>This is Description Two</item>
+	    <item>This is Description Three</item>
+	    <item>This is Description Four</item>
+	    <item>This is Description Five</item>
+	    <item>This is Description Six</item>
+	    <item>This is Description Seven</item>
+	    <item>This is Description Eight</item>
+	    <item>This is Description Nine</item>
+	    <item>This is Description Ten</item>
+	    <item>This is Description Eleven</item>
+	    <item>This is Description Twelve</item>
+	</string-array>
+</resources>
+
