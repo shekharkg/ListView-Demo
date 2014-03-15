@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity implements CompoundButton.OnCheckedChangeListener, OnClickListener{
@@ -35,7 +36,12 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
     b4.setOnClickListener(this);
     t.setOnCheckedChangeListener(this);
   }
-
+@Override
+public void onBackPressed() {
+  // TODO Auto-generated method stub
+  Toast.makeText(this, "Are you sure", Toast.LENGTH_SHORT).show();
+  super.onBackPressed();
+}
 
   @Override
   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

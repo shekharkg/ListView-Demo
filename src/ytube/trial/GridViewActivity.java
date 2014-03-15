@@ -24,12 +24,12 @@ public class GridViewActivity extends Activity implements AdapterView.OnItemClic
     // TODO Auto-generated method stub
     Intent i = new Intent(this, MyDialog.class);
     
-    /*MyViewHolder1 holder = (MyViewHolder1) arg1.getTag();
+    MyViewHolder1 holder = (MyViewHolder1) arg1.getTag();
     BaseAdapterRow temp = (BaseAdapterRow) holder.myImage.getTag();
     
     i.putExtra("myImage",temp.image );
     i.putExtra("myTitle",temp.title );
-   // i.putExtra("myDescription",temp.descripton );*/
+    i.putExtra("myDescription",temp.descripton );
     startActivity(i);
   }
 }

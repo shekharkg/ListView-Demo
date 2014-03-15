@@ -82,6 +82,7 @@ public class GridViewAdapter extends BaseAdapter{
     }
     BaseAdapterRow temp = listRow.get(position);
     holder.myImage.setImageResource(temp.image);
+    holder.myImage.setTag(temp);
     return row;
   }
 
