@@ -11,6 +11,7 @@ public class GridViewActivity extends Activity{
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_gridview);
-    gridView = (GridView) findViewById(R.id.gridView1);
+    gridView = (GridView) findViewById(R.id.gridView);
+    gridView.setAdapter(new GridViewAdapter(this));
   }
 }

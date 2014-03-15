@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 
 public class GridViewAdapter extends BaseAdapter{
 
@@ -29,7 +31,8 @@ public class GridViewAdapter extends BaseAdapter{
      
     for(int i=0;i<60;i++)
      {
-       listRow.add(new BaseAdapterRow(titles[i], description[i], image[i]));
+       BaseAdapterRow listAdd = new BaseAdapterRow(titles[i], description[i], image[i]);
+       listRow.add(listAdd);
      }
   }
   
@@ -51,11 +54,35 @@ public class GridViewAdapter extends BaseAdapter{
     // TODO Auto-generated method stub
     return arg0;
   }
+  
+//------------Holder Class----------------------
+  class MyViewHolder1{
 
+    ImageView myImage;
+    
+     MyViewHolder1(View v){
+        myImage = (ImageView) v.findViewById(R.id.imageView1);
+     }
+  }
+  
+  
   @Override
   public View getView(int position, View convertView, ViewGroup parent) {
     // TODO Auto-generated method stub
-    return null;
+    View row = convertView;
+    MyViewHolder1 holder = null;
+    if(row==null){
+      LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+      row = inflater.inflate(R.layout.grid_singlerow,parent,false);
+      holder = new MyViewHolder1(row);
+      row.setTag(holder);
+    }
+    else{
+      holder = (MyViewHolder1) row.getTag();
+    }
+    BaseAdapterRow temp = listRow.get(position);
+    holder.myImage.setImageResource(temp.image);
+    return row;
   }
 
 }

@@ -16,7 +16,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
   
   RelativeLayout r;
   ToggleButton t;
-  Button b,b1,b2,b3;
+  Button b,b1,b2,b3,b4;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -27,10 +27,12 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
     b1 = (Button) findViewById(R.id.button_imageList);
     b2 = (Button) findViewById(R.id.button_descList);
     b3 = (Button) findViewById(R.id.button1);
+    b4 = (Button) findViewById(R.id.button2);
     b.setOnClickListener(this);
     b1.setOnClickListener(this);
     b2.setOnClickListener(this);
     b3.setOnClickListener(this);
+    b4.setOnClickListener(this);
     t.setOnCheckedChangeListener(this);
   }
 
@@ -68,6 +70,10 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
     case R.id.button1:
       Intent l = new Intent(MainActivity.this, BaseAdapterActivity.class);
       startActivity(l);
+      break;
+    case R.id.button2:
+      Intent m = new Intent(MainActivity.this, GridViewActivity.class);
+      startActivity(m);
       break;
     }
   }
