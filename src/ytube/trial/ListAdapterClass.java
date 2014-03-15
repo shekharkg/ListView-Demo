@@ -24,21 +24,36 @@ public class ListAdapterClass extends ArrayAdapter<String>{
     this.titleArray = titles;
     this.descriptionArray = memeDescription;
   }
+  
+  class MyViewHolder{
+   ImageView myImage;
+   TextView myTitle;
+   TextView  myDescription;
+   
+   MyViewHolder(View v){
+     myImage = (ImageView) v.findViewById(R.id.imageView1);
+     myTitle =  (TextView) v.findViewById(R.id.textView1);
+     myDescription =  (TextView) v.findViewById(R.id.textView2);
+   }
+   
+  }
   @Override
   public View getView(int position, View convertView, ViewGroup parent){
-    
-      LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-      View row = inflater.inflate(R.layout.descsingle_row, parent,false);
-   
-    
-   
-    ImageView myImage = (ImageView) row.findViewById(R.id.imageView1);
-    TextView myTitle =  (TextView) row.findViewById(R.id.textView1);
-    TextView myDescription =  (TextView) row.findViewById(R.id.textView2);
-    
-    myImage.setImageResource(imageArray[position]);
-    myTitle.setText(titleArray[position]);
-    myDescription.setText(descriptionArray[position]);
+      View row = convertView;
+      MyViewHolder holder = null;
+      if(row==null){
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        row = inflater.inflate(R.layout.descsingle_row, parent,false);
+        holder = new MyViewHolder(row);
+        row.setTag(holder);
+      }
+      else{
+        holder = (MyViewHolder) row.getTag();
+      }
+      
+    holder.myImage.setImageResource(imageArray[position]);
+    holder.myTitle.setText(titleArray[position]);
+    holder.myDescription.setText(descriptionArray[position]);
     
     return row;
     
